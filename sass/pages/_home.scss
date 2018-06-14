@@ -9,3 +9,46 @@
     padding: 2.5rem;
     text-align: center;
 }
+
+.overview {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--color-gray-light-2);
+    &__stars {
+        margin-right: auto;
+        display: flex;
+    }
+    &__icon {
+        width: 1.75rem;
+        height: 1.75rem;
+        fill: var(--color-primary);
+        &--location {
+            margin-right: .5rem;
+        }
+    }
+    &__location {
+        display: flex;
+        font-size: 1.2rem;
+        align-items: center;
+    }
+    &__rating {
+        align-self: stretch;
+        margin-left: 3rem;
+        padding: 0 2.25rem;
+        background-color: var(--color-primary);
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &-average {
+            font-size: 2.25rem;
+            font-weight: 300;
+            margin-bottom: -3px;
+        }
+        &-count {
+            font-size: .8rem;
+            text-transform: uppercase;
+        }
+    }
+}

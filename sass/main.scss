@@ -22,7 +22,10 @@ Grey dark 3: #999
 @import "base/base";
 @import "base/utilities";
 @import "base/typography";
+@import "base/animations";
 @import "layout/grid";
 @import "layout/header";
 @import "layout/navigation";
 @import "pages/home";
+@import "components/gallery";
+@import "components/buttons";
