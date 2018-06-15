@@ -14,4 +14,14 @@
         outline: none;
         animation: pulsate 1s infinite;
     }
+    &--reviews {
+        font-size: 1.4rem;
+        & span {
+            margin-left: 3px;
+            transition: margin-left .2s;
+        }
+        &:hover span {
+            margin-left: 8px;
+        }
+    }
 }

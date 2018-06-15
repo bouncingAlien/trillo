@@ -111,4 +111,8 @@
     }
 }
 
-.user-reviews {}
+.user-reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
