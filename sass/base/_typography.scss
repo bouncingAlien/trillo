@@ -16,3 +16,16 @@ body {
     letter-spacing: 1px;
     padding: 1.5rem 3rem;
 }
+
+.description {
+    font-size: 1.4rem;
+}
+
+.paragraph:not(:last-of-type) {
+    margin-bottom: 2rem;
+}
+
+.recommend {
+    font-size: 1.3rem;
+    color: var(--color-gray-dark-3);
+}
