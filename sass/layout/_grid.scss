@@ -3,12 +3,18 @@
     margin: 8rem auto;
     background-color: var(--color-gray-light-1);
     box-shadow: var(--shadow-dark);
-    // TO DELETE
-    min-height: 50rem;
+    @media screen and (max-width: $bp-largest) {
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+    }
 }
 
 .content {
     display: flex;
+    @media screen and (max-width: $bp-medium) {
+        flex-direction: column;
+    }
 }
 
 .sidebar {
@@ -21,11 +27,21 @@
 
 .detail {
     display: flex;
+    @media screen and (max-width: $bp-small) {
+        flex-direction: column;
+    }
 }
 
 .description {
     flex: 0 0 60%;
     margin-right: 4.5rem;
+    @media screen and (max-width: $bp-medium) {
+        margin-right: 3rem;
+    }
+    @media screen and (max-width: $bp-small) {
+        margin-right: 0;
+        margin-bottom: 3rem;
+    }
 }
 
 .user-reviews {

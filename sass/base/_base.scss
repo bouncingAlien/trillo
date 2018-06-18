@@ -12,12 +12,13 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+    @media only screen and (max-width: $bp-large) {
+        font-size: 50%;
+    }
 }
 
 body {
     background-image: linear-gradient(to bottom right, var(--color-primary-light), var(--color-primary-dark));
     background-size: cover;
     background-repeat: no-repeat;
-    // TO DELETE
-    min-height: 100vh;
 }

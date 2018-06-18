@@ -8,10 +8,20 @@
 .side-nav {
     font-size: 1.4rem;
     margin-top: 3.5rem;
+    @media screen and (max-width: $bp-medium) {
+        display: flex;
+        margin: 0;
+    }
     &__item {
         position: relative;
         &:not(:last-child) {
             margin-bottom: 1rem;
+            @media screen and (max-width: $bp-medium) {
+                margin-bottom: 0;
+            }
+        }
+        @media screen and (max-width: $bp-medium) {
+            flex: 1;
         }
     }
     &__item::before {
@@ -44,11 +54,23 @@
         align-items: center;
         position: relative;
         z-index: 1;
+        @media screen and (max-width: $bp-medium) {
+            justify-content: center;
+            padding: 2rem 3rem;
+        }
+        @media screen and (max-width: $bp-small) {
+            flex-direction: column;
+            padding: .7rem 1rem;
+        }
     }
     &__icon {
         width: 1.75rem;
         height: 1.75rem;
         margin-right: 2rem;
         fill: currentColor;
+        @media screen and (max-width: $bp-small) {
+            margin-right: 0;
+            margin-bottom: .5rem;
+        }
     }
 }
